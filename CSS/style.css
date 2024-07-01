@@ -51,10 +51,46 @@
     width: 100%;
     height: 100%;
 }
+#card4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
 #a1{
     background: url('../Img/a1.jpg') center/cover; 
-    width: 100%;
-    height: 100%;
+    width: 736px;
+    height: 251px;
+}
+#a6{
+    background: url('../Img/a6.jpg') center/cover; 
+    width: 736px;
+    height: 251px;
+}
+#a7{
+    background: url('../Img/a7.jpg') center/cover; 
+    width: 736px;
+    height: 251px;
+}
+#a18{
+    background: url('../Img/a18.jpg') center/cover; 
+    width: 633px;
+    height: 463px;
+}
+#a19{
+    background: url('../Img/a19.jpg') center/cover; 
+    width: 633px;
+    height: 463px;
+}
+#a20{
+    background: url('../Img/a20.jpg') center/cover; 
+    width: 633px;
+    height: 463px;
+}
+#a21{
+    background: url('../Img/a21.jpg') center/cover; 
+    width: 633px;
+    height: 463px;
 }
 
 .qaqaimg{
@@ -90,6 +126,15 @@
     align-items: center;
 }
 .info{
+    display: grid;
+    grid-template-rows: 492px 492px 492px 492px;
+    gap: 10px;
+}
+#card1{ grid-area: 1 / 1 / 2 / 2;}
+#card2{ grid-area: 2 / 1 / 3 / 2;}
+#card3{ grid-area: 3 / 1 / 4 / 2;}
+#card4{ grid-area: 4 / 1 / 5 / 2;}
+.info-item{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -120,16 +165,26 @@
 .mar-y10{margin: 10px 0;}
 .pad90{padding: 90px 90px 10px 90px;} 
 .pad-top50{padding-top: 50px;}
+.pad-y50{padding: 50px 0;}
 .vh100{height: 100vh;}
 .vh50{height: 50vh;}
 .vh80{height: 80vh;}
 .height200{height: 200px;}
 .w100{width: 100%;}
 .w50{width: 50%;}
+.w310{min-width: 310px;}
 
 .se{overflow: hidden;}
-
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 734px){
+    .info{
+        grid-template-rows: 734px 600px 734px;
+    }
+    #card1{ grid-area: 1 / 1 / 2 / 3;}
+    #card2{ grid-area: 2 / 1 / 3 / 2;}
+    #card3{ grid-area: 2 / 2 / 3 / 3;}
+    #card4{ grid-area: 3 / 1 / 4 / 3;}
+}
+@media only screen and (min-width: 1068px) {
     .secimg2{
         display: initial;
         width: 100%;
@@ -145,16 +200,14 @@
         flex-direction: row;
 
     }
-    .d-info{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-
-        div{
-            width: 30%;
-            margin: 0 5px;
-        }
+    .info{
+        grid-template-rows: 600px 600px;
+    }
+    @media only screen and (min-width: 734px){
+        #card1{ grid-area: 1 / 1 / 2 / 2;}
+        #card2{ grid-area: 1 / 2 / 2 / 3;}
+        #card3{ grid-area: 1 / 3 / 2 / 4;}
+        #card4{ grid-area: 2 / 1 / 4 / 4;}
     }
     .col{width: 25%}
     .qaqaimg{ width: 90% }
