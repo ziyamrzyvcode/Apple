@@ -74,28 +74,45 @@
     width: 100%;
     height: 251px;
 }
-#a6 img{
-    width: 736px;
-    height: 463px;
+
+#a18{width: 50%;}
+#a18 img{
+    width: 100%;
 }
-#a7 img{
-    width: 736px;
-    height: 463px;
-}
+#a19{height: 100%;}
 #a19 img{
-    width: 736px;
-    height: 463px;
+    width: 100%;
+}
+#a7{height: 100%;}
+#a7 img{
+    width: 100%;
+}
+#a6{height: 100%;}
+#a6 img{
+    width: 100%;
+}
+#a21{height: 100%;}
+#a21 img{
+    width: 100%;
+    max-height: 100%;
 }
 #a20{
     background: url('../Img/a20.jpg') center/cover; 
-    width: 736px;
-    height: 463px;
-}
-#a21 img{
-    width: 736px;
-    height: 463px;
+    height: 80vh;
+    width: 100%;
 }
 
+.sec-item-txt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.sec-item-txt-3{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 .qaqaimg{
     background: url('../Img/qaqa.jpg') center/cover;
     border-radius: 50px;
@@ -131,7 +148,7 @@
 }
 .info{
     display: grid;
-    grid-template-columns: 396px;
+    grid-template-columns: 100%;
     grid-template-rows: 492px 492px 492px 492px;
     gap: 10px;
     justify-content: center;
@@ -157,11 +174,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 20px 0;
+    min-height: 50vh;
 }
 .sec-item2{
     display: grid;
-    grid-template-columns: 396px 396px;
-    grid-template-rows: 492px 492px;
+    grid-template-columns: 100%;
+    grid-template-rows: 400px 500px 500px;
     gap: 10px;
     justify-content: center;
 }
@@ -223,10 +242,6 @@
         grid-template-columns: 362px 362px;
         grid-template-rows: 734px 600px 734px;
     }
-    .sec-item2{
-        grid-template-columns: 600px 600px ;
-        grid-template-rows: 600px 600px ;
-    }
     #card1{ grid-area: 1 / 1 / 2 / 3;}
     #card2{ grid-area: 2 / 1 / 3 / 2;}
     #card3{ grid-area: 2 / 2 / 3 / 3;}
@@ -239,6 +254,10 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
+    }
+    .sec-item2{
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto;
     }
     .sec-item2-1{grid-area: 1/1/2/3;} 
     .sec-item2-2{grid-area: 2/1/3/2;} 
