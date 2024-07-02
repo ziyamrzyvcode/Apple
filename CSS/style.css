@@ -277,7 +277,7 @@
         flex-direction: row;
     }
     .info{
-        grid-template-columns: 362px 362px 362px;
+        grid-template-columns: 33.33% 33.33% 33.33%;
         grid-template-rows: 600px 600px;
     }
     #a1{
