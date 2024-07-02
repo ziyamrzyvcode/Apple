@@ -232,8 +232,19 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    padding: 50px 0;
 }
+.col-1{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.col-1 i{ font-size: 3em; color: #535353;}
+.col-1 p{ font-size: 21px; padding: 5px 0;}
+.ptxt-1{font-weight: 600;}
 .son{
     display: grid;
     grid-template-rows: auto auto auto auto auto auto;
@@ -265,7 +276,7 @@
     .dnone{display: initial;}
     .row-1{
         flex-direction: row;
-        justify-content: space-around ;
+        justify-content: space-around;
     }
     .se{
         height: initial;
